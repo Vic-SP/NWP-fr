@@ -2,7 +2,7 @@
 NeutralWikiPol-fr is an exploratory, fine-grained dataset designed to capture implicit, context-dependent semantic biases in French political biographies on Wikipedia.
 
 ## 📊 Dataset Structure
-The dataset (`NeutralWikiPol-fr_dataset.txt`) is organized into three main components: Wikipedia raw metadata, Expert Annotations, and Bias Taxonomy. 
+The dataset (`NeutralWikiPol-fr.txt`) is organized into three main components: Wikipedia raw metadata, Expert Annotations, and Bias Taxonomy. 
 
 The tab-delimited columns are structured as follows:
 
