@@ -30,7 +30,7 @@ The tab-delimited columns are structured in the following exact order:
 
 # Experimental Prompts for NeutralWikiPol-fr Evaluation
 
-This file contains the exact prompt templates used in the experimental benchmarking of state-of-the-art Large Language Models (LLMs) against human political science experts, as described in Section 5 (*Evaluation Protocol*) of the paper.
+This file contains the exact prompt templates used in the experimental benchmarking of state-of-the-art Large Language Models (LLMs) against human political science experts, as described in Section 5 (*Evaluation Protocol*/*Exploratory Experiments with LLMs*) of the paper.
 
 ## ⚙️ Experimental Parameters
 To ensure transparency and address reproducibility constraints, the experiments were conducted under the following environmental settings:
