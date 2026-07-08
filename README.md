@@ -28,6 +28,96 @@ The tab-delimited columns are structured in the following exact order:
 * **Paragraph Breaks:** Within the extracted text (Targeted Statements and Context Paragraphs), the `///` delimiter is used to explicitly indicate where a paragraph break occurred in the original Wikipedia source text.
 * **Metadata & Attribution:** Unmodified Wikipedia metadata (`Editor username` and `Edit Date`) are strictly retained to fulfill the legal requirements of the CC BY-SA 4.0 license, ensuring that the original Wikipedia authors receive proper credit for their contributions.
 
+## Terms that indicate a lack of neutrality in comments by Wikipedia editors
+
+Terms expressing explicitly a lack of neutrality
+
+Original (french)
+
+Translation (english)
+
+Caviardage
+
+No translation: fraudulent or misleading alteration of an article
+
+Conflit d'intérêt
+
+Conflict of interest
+
+Hagiographique
+
+Hagiographic
+
+Idéologique
+
+Ideological
+
+Neutralité
+
+Neutrality
+
+Objectivité
+
+Objectivity
+
+Orienté
+
+Biased
+
+Partialité
+
+Partiality
+
+Partisan
+
+No translation: a way to describe a biased opinion
+
+Péjoratif
+
+Pejorative
+
+Point de vue
+
+Point of view
+
+Promotionnel
+
+Promotional
+
+Publicitaire
+
+Advertising
+
+Sobriété
+
+Sobriety
+
+Subjectivité
+
+Subjectivity
+
+Trivialité
+
+Triviality
+
+Sentences expressing implicitly a lack of neutrality
+
+Original (french)
+
+Translation (english)
+
+Un de ses amis le soutient ? Incroyable !
+
+One of his friends supports him? Unbelievable!
+
+"Il a cependant", "a critiqué le caractère démagogique de". C'est Wikipédia on n'est pas là pour cirer les pompes. Les références sont là.
+
+"However, he has", "he criticized the demagogic nature of". This is Wikipedia, we're not here to suck up. The references are there.
+
+Le troisième élu au dernier reste, Aschieri était donc très loin d'être élu et pas "il manque de peu d'être élu".
+
+The third seat was awarded via the last remainder, so Aschieri was very far from being elected and not "just short of being elected".
+
 # Experimental Prompts for NeutralWikiPol-fr Evaluation
 
 This file contains the exact prompt templates used in the experimental benchmarking of state-of-the-art Large Language Models (LLMs) against human political science experts, as described in Section 5 (*Evaluation Protocol*/*Exploratory Experiments with LLMs*) of the paper.
