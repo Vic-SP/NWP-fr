@@ -28,95 +28,48 @@ The tab-delimited columns are structured in the following exact order:
 * **Paragraph Breaks:** Within the extracted text (Targeted Statements and Context Paragraphs), the `///` delimiter is used to explicitly indicate where a paragraph break occurred in the original Wikipedia source text.
 * **Metadata & Attribution:** Unmodified Wikipedia metadata (`Editor username` and `Edit Date`) are strictly retained to fulfill the legal requirements of the CC BY-SA 4.0 license, ensuring that the original Wikipedia authors receive proper credit for their contributions.
 
-## Terms that indicate a lack of neutrality in comments by Wikipedia editors
+## Wikipedia Content Extraction Protocol
 
-Terms expressing explicitly a lack of neutrality
+To ensure the quality and relevance of our dataset, we manually filtered the samples using strict exclusion criteria:
 
-Original (french)
+* **Grammar and Style**: We isolated neutrality-focused revisions, excluding simultaneous changes such as formatting, spelling, or minor clarifications (e.g., expanding "Crémel affair" to "Nelly Crémel affair").
 
-Translation (english)
+* **Vandalism**: Consistent with standard practices in neutrality research, we excluded blatant vandalism, including insults or crude edits (Recasens et al., 2013; Hube et al., 2018).
 
-Caviardage
+* **Source Misrepresentation**: We discarded revisions where the perceived bias stemmed from a misinterpretation of a cited reference (e.g., "biased extrapolation"). Evaluating these cases requires external context, whereas our dataset focuses strictly on intrinsic textual bias.
 
-No translation: fraudulent or misleading alteration of an article
+* **Non-Political Figures**: We excluded individuals whose primary notability lies outside the political sphere (e.g., comedians or business executives who ran for office but were not primarily active as politicians).
 
-Conflit d'intérêt
+## Terms that indicate a lack of neutrality in the comments made by the Wikipedia editors
 
-Conflict of interest
+**Terms expressing explicitly a lack of neutrality**
 
-Hagiographique
+| Original (french) | Translation (english)|
+| :--- | :--- |
+| Caviardage | No translation: fraudulent or misleading alteration of an article |
+| Conflit d'intérêt | Conflict of interest |
+| Hagiographique | Hagiographic |
+| Idéologique | Ideological |
+| Neutralité | Neutrality |
+| Objectivité | Objectivity |
+| Orienté | Biased |
+| Partialité | Partiality |
+| Partisan | No translation: a way to describe a biased opinion |
+| Péjoratif | Pejorative |
+| Point de vue | Point of view |
+| Promotionnel | Promotional |
+| Publicitaire | Advertising |
+| Sobriété | Sobriety |
+| Subjectivité | Subjectivity |
+| Trivialité | Triviality |
 
-Hagiographic
+**Sentences expressing implicitly a lack of neutrality**
 
-Idéologique
-
-Ideological
-
-Neutralité
-
-Neutrality
-
-Objectivité
-
-Objectivity
-
-Orienté
-
-Biased
-
-Partialité
-
-Partiality
-
-Partisan
-
-No translation: a way to describe a biased opinion
-
-Péjoratif
-
-Pejorative
-
-Point de vue
-
-Point of view
-
-Promotionnel
-
-Promotional
-
-Publicitaire
-
-Advertising
-
-Sobriété
-
-Sobriety
-
-Subjectivité
-
-Subjectivity
-
-Trivialité
-
-Triviality
-
-Sentences expressing implicitly a lack of neutrality
-
-Original (french)
-
-Translation (english)
-
-Un de ses amis le soutient ? Incroyable !
-
-One of his friends supports him? Unbelievable!
-
-"Il a cependant", "a critiqué le caractère démagogique de". C'est Wikipédia on n'est pas là pour cirer les pompes. Les références sont là.
-
-"However, he has", "he criticized the demagogic nature of". This is Wikipedia, we're not here to suck up. The references are there.
-
-Le troisième élu au dernier reste, Aschieri était donc très loin d'être élu et pas "il manque de peu d'être élu".
-
-The third seat was awarded via the last remainder, so Aschieri was very far from being elected and not "just short of being elected".
+| Original (french) | Translation (english)|
+| :--- | :--- |
+| Un de ses amis le soutient ? Incroyable ! | One of his friends supports him? Unbelievable! |
+| "Il a cependant", "a critiqué le caractère démagogique de". C'est Wikipédia on n'est pas là pour cirer les pompes. Les références sont là. |"However, he has", "he criticized the demagogic nature of". This is Wikipedia, we're not here to suck up. The references are there. |
+| Le troisième élu au dernier reste, Aschieri était donc très loin d'être élu et pas "il manque de peu d'être élu". | The third seat was awarded via the last remainder, so Aschieri was very far from being elected and not "just short of being elected". |
 
 # Experimental Prompts for NeutralWikiPol-fr Evaluation
 
