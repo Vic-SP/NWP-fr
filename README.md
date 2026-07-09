@@ -17,6 +17,7 @@ The tab-delimited columns are structured in the following exact order:
 | **Biographical Summary** | The introductory summary of the candidate's biography. |
 | **Edit Date** | The exact timestamp of the Wikipedia edit. |
 | **Editor username** | The username of the Wikipedia contributor who made the edit. |
+| **Annotator n°(x) judgment** | Five columns containing each annotator's judgement of a statement's neutrality. |
 | **Annotator's Majority Vote** | The final aggregated judgment from the 5 political science experts (requires ≥ 3/5 agreement). |
 | **Neutral Vote Ratio** | The exact proportion of experts who classified the statement as neutral. |
 | **Non-neutral Vote Ratio** | The exact proportion of experts who classified the statement as non-neutral. |
@@ -42,7 +43,7 @@ To ensure the quality and relevance of our dataset, we manually filtered the sam
 
 ## Terms that indicate a lack of neutrality in the comments made by the Wikipedia editors
 
-**Terms expressing explicitly a lack of neutrality**
+**Terms expressing explicitly neutrality or a lack of neutrality**
 
 | Original (french) | Translation (english)|
 | :--- | :--- |
@@ -70,6 +71,14 @@ To ensure the quality and relevance of our dataset, we manually filtered the sam
 | Un de ses amis le soutient ? Incroyable ! | One of his friends supports him? Unbelievable! |
 | "Il a cependant", "a critiqué le caractère démagogique de". C'est Wikipédia on n'est pas là pour cirer les pompes. Les références sont là. |"However, he has", "he criticized the demagogic nature of". This is Wikipedia, we're not here to suck up. The references are there. |
 | Le troisième élu au dernier reste, Aschieri était donc très loin d'être élu et pas "il manque de peu d'être élu". | The third seat was awarded via the last remainder, so Aschieri was very far from being elected and not "just short of being elected". |
+
+## 'Ambiguously neutral sentences'
+
+| **Original (french)** | **Translation (english)** | **Explanation** |
+| :--- | :--- |
+| Début 2016, le nouveau président du conseil régional de Nouvelle Aquitaine, le socialiste Alain Rousset, fait état d'un mauvais bilan financier de l'ancienne région Poitou-Charentes, déclarant que « c'est une région qui manifestait beaucoup de volontarisme et avait sans doute les yeux plus gros que le ventre par rapport aux capacités de financement ». Un audit commandé au cabinet EY et publié en avril 2016 confirme une « forte dégradation » de la situation financière de la région Poitou-Charentes sous la présidence de Ségolène Royal. L'étude relève des retards de paiements s'élevant à 132 millions d'euros et évoque une situation de quasi-banqueroute si la région n'avait pas été fusionnée avec l'Aquitaine et le Limousin en 2015. (...). | In early 2016, the new president of the Nouvelle-Aquitaine Regional Council, Socialist Alain Rousset, reported on the poor financial performance of the former Poitou-Charentes region, stating that “it was a region that showed a great deal of initiative but undoubtedly bit off more than it could chew in terms of its financing capacity.” An audit commissioned from EY and published in April 2016 confirmed a “sharp deterioration” in the financial situation of the Poitou-Charentes region under the presidency of Ségolène Royal. The study notes payment arrears totaling 132 million euros and suggests that the region would have been on the verge of bankruptcy had it not been merged with Aquitaine and Limousin in 2015. (...). | The accumulation of evidence that could be used to accuse the politician in question of financial mismanagement can be interpreted as a way to tarnish his or her image. |
+
+
 
 # Experimental Prompts for NeutralWikiPol-fr Evaluation
 
